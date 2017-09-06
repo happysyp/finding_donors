@@ -13104,7 +13104,7 @@ It is a ratio of true positives(words classified as spam, and which are actually
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
@@ -13122,7 +13122,7 @@ It is a ratio of true positives(words classified as spam, and which are actually
 
 <span class="c1"># TODO: Calculate F-score using the formula above for beta = 0.5 and correct values for precision and recall.</span>
 <span class="c1"># HINT: The formula above can be written as (1 + beta**2) * (precision * recall) / ((beta**2 * precision) + recall)</span>
-<span class="n">fscore</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">precision</span><span class="o">*</span><span class="n">recall</span><span class="o">/</span><span class="p">(</span><span class="n">precision</span><span class="o">+</span><span class="n">recall</span><span class="p">)</span>
+<span class="n">fscore</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mf">0.5</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="n">precision</span><span class="o">*</span><span class="n">recall</span><span class="o">/</span><span class="p">(</span><span class="mf">0.5</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">precision</span><span class="o">+</span><span class="n">recall</span><span class="p">)</span>
 
 <span class="c1"># Print the results </span>
 <span class="k">print</span> <span class="s2">&quot;Naive Predictor: [Accuracy score: {:.4f}, F-score: {:.4f}]&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">accuracy</span><span class="p">,</span> <span class="n">fscore</span><span class="p">)</span>
@@ -13142,7 +13142,7 @@ It is a ratio of true positives(words classified as spam, and which are actually
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Naive Predictor: [Accuracy score: 0.2478, F-score: 0.3972]
+<pre>Naive Predictor: [Accuracy score: 0.2478, F-score: 0.2917]
 </pre>
 </div>
 </div>
